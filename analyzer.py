@@ -43,7 +43,7 @@ def letter_grade(overall_grade):
         print(f"Letter grade: F")
         return 
 letter_grade(overall_grade)
-
+# def to check for attendence and displays message based on answer
 def attendence_status(attendence):
     if attendence >= 95:
         print(f"Excellent Attendence")
@@ -55,7 +55,7 @@ def attendence_status(attendence):
         print(f"poor attendence")
         return 
 attendence_status(attendence)
-
+# def to check how many assignments student is missing and displays a message according to the amount
 def missing_assignment_status(missing):
     if missing == 0:
         print(f"Missing assignment status: excellent")
@@ -119,7 +119,7 @@ pin = input("enter pin:")
 
 real_user = "student"
 real_pin = "1234"
-
+#small nest to make sure the student has thev right user and pin in order
 if user == real_user:
     if pin == real_pin:
         print(f"login succesfull.")
@@ -150,14 +150,14 @@ def strongest_category(assignment_average, quiz_average, test_average):
         print(f"Strongest category: Tests")
 
 strongest_category(assignment_average, quiz_average, test_average)
-
+#extra credit def to check if they are a standard or outstanding student
 def check_advanced_status(overall_grade, attendence, missing):
         if (overall_grade >= 90 and attendence >= 95) or (overall_grade >= 85 and missing == 0):
                 print("Advanced Status: OUTSTANDING STUDENT")
         else:
                 print("Advanced Status: STANDARD STUDENT STATUS")
 
-
+# final summary for student showing final scores for everything personalized to the inputs of the student
 print("========================================")
 print("             STUDENT SUMMARY")
 print("========================================")
